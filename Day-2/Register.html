@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register – Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="container">
+        <nav class="navbar">
+            <h1><a href="index.html" style="text-decoration:none; color:inherit;">Furniture</a></h1>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="login.html"><button>Login</button></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="auth-body">
+        <div class="auth-card">
+            <div class="auth-card-header">
+                <h2>Create Account</h2>
+                <p>Join the Furniture family today</p>
+            </div>
+            <div class="auth-card-body">
+                <form action="#" method="post">
+                    <div class="form-grid">
+
+                        <p class="section-title">Personal Details</p>
+
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9+\s\-]{10,15}" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" id="dob" name="dob">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <p class="section-title">Address</p>
+
+                        <div class="form-group full">
+                            <label for="address">Street Address</label>
+                            <input type="text" id="address" name="address">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pincode">Pincode</label>
+                            <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" maxlength="6">
+                        </div>
+
+                        <p class="section-title">Security</p>
+
+                        <div class="form-group full">
+                            <label for="regPassword">Password</label>
+                            <input type="password" id="regPassword" name="password" placeholder="Minimum 8 characters" required minlength="8">
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repeat your password" required minlength="8">
+                        </div>
+
+                    </div>
+
+                    <div class="terms-row">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">
+                            I agree to the <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a> of Furniture.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-auth">Create Account</button>
+                </form>
+
+                <div class="divider"><span>or</span></div>
+
+                <div class="auth-footer">
+                    Already have an account? <a href="login.html">Login here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
