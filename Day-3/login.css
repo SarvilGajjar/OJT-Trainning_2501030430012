@@ -1,0 +1,210 @@
+/* ── login.css ── */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Jost:wght@300;400;500;600&display=swap');
+
+body {
+    background-color: #fdf8f2;
+}
+
+.auth-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 20px 70px;
+}
+
+.auth-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 40px rgba(141, 81, 81, 0.15);
+    width: 100%;
+    max-width: 470px;
+    overflow: hidden;
+}
+
+.auth-card-header {
+    background-image: url(https://assets.bldnxt.in/catalog/product/cache/1/image/a77c1558d860704591e3027d1ebed402/s/a/saaf680129_coch680129_5bb45f5781b6e.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 40px;
+    text-align: center;
+    position: relative;
+}
+
+.auth-card-header::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.22);
+}
+
+.auth-card-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.35);
+}
+
+.auth-card-header p {
+    font-family: 'Jost', sans-serif;
+    color: #f5ede3;
+    font-size: 14px;
+    margin-top: 6px;
+    position: relative;
+    z-index: 1;
+    font-weight: 300;
+}
+
+.auth-card-body {
+    padding: 38px 42px 42px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    color: #7a4f3a;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.form-group label i {
+    font-size: 13px;
+    color: #8d5151;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1.5px solid #e8d5c4;
+    border-radius: 10px;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    color: #3a2a1e;
+    background: #fdf8f2;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+    border-color: #8d5151;
+    box-shadow: 0 0 0 3px rgba(141, 81, 81, 0.12);
+}
+
+.form-group input::placeholder {
+    color: #c0a898;
+    font-weight: 300;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 26px;
+}
+
+.remember-label {
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    color: #6b5040;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.remember-label input[type="checkbox"] {
+    accent-color: #8d5151;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.forgot-link {
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    color: #8d5151;
+    text-decoration: underline;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.btn-auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #8d5151, #b06a4a);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 4px 14px rgba(141, 81, 81, 0.35);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
+}
+
+.btn-auth:hover {
+    background: linear-gradient(135deg, #a05e5e, #c07a5a);
+    box-shadow: 0 6px 22px rgba(141, 81, 81, 0.45);
+    transform: translateY(-1px);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 26px 0;
+}
+
+.divider span {
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    color: #b09080;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e8d5c4;
+}
+
+.auth-footer {
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    color: #6b5040;
+}
+
+.auth-footer a {
+    color: #8d5151;
+    font-weight: 600;
+    text-decoration: underline;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}

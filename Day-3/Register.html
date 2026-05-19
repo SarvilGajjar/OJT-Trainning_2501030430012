@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register – Furniture</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Register.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="container">
+        <nav class="navbar">
+            <h1><a href="index.html" style="text-decoration:none; color:inherit;">Furniture</a></h1>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html"><i class="bi bi-house-door-fill"></i> Home</a></li>
+                    <li><a href="index.html#services"><i class="bi bi-stars"></i> Services</a></li>
+                    <li><a href="index.html#products"><i class="bi bi-grid-3x3-gap-fill"></i> Product</a></li>
+                    <li><a href="index.html#gallery"><i class="bi bi-images"></i> Gallery</a></li>
+                    <li><a href="index.html#contact"><i class="bi bi-envelope-fill"></i> Contact Us</a></li>
+                    <li><a href="login.html"><button><i class="bi bi-person-circle"></i> Login</button></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Registration Form -->
+    <div class="auth-body">
+        <div class="auth-card">
+            <div class="auth-card-header">
+                <h2>Create Account</h2>
+                <p>Join the Furniture family today</p>
+            </div>
+            <div class="auth-card-body">
+                <form action="#" method="post">
+                    <div class="form-grid">
+
+                        <p class="section-title"><i class="bi bi-person-fill"></i> Personal Details</p>
+
+                        <div class="form-group">
+                            <label for="firstName"><i class="bi bi-person"></i> First Name</label>
+                            <input type="text" id="firstName" name="firstName" placeholder="Raj" required minlength="2">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName"><i class="bi bi-person"></i> Last Name</label>
+                            <input type="text" id="lastName" name="lastName" placeholder="Sharma" required minlength="2">
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="email"><i class="bi bi-envelope-fill"></i> Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="phone"><i class="bi bi-telephone-fill"></i> Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" pattern="[0-9+\s\-]{10,15}" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="dob"><i class="bi bi-calendar-fill"></i> Date of Birth</label>
+                            <input type="date" id="dob" name="dob">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="gender"><i class="bi bi-gender-ambiguous"></i> Gender</label>
+                            <select id="gender" name="gender" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not">Prefer not to say</option>
+                            </select>
+                        </div>
+
+                        <p class="section-title"><i class="bi bi-geo-alt-fill"></i> Address</p>
+
+                        <div class="form-group full">
+                            <label for="address"><i class="bi bi-house-fill"></i> Street Address</label>
+                            <input type="text" id="address" name="address" placeholder="123, MG Road">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city"><i class="bi bi-building-fill"></i> City</label>
+                            <input type="text" id="city" name="city" placeholder="Ahmedabad">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pincode"><i class="bi bi-mailbox-flag"></i> Pincode</label>
+                            <input type="text" id="pincode" name="pincode" placeholder="380001" pattern="[0-9]{6}" maxlength="6">
+                        </div>
+
+                        <p class="section-title"><i class="bi bi-shield-lock-fill"></i> Security</p>
+
+                        <div class="form-group full">
+                            <label for="regPassword"><i class="bi bi-lock-fill"></i> Password</label>
+                            <input type="password" id="regPassword" name="password" placeholder="Minimum 8 characters" required minlength="8">
+                        </div>
+
+                        <div class="form-group full">
+                            <label for="confirmPassword"><i class="bi bi-lock-fill"></i> Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Repeat your password" required minlength="8">
+                        </div>
+
+                    </div>
+
+                    <div class="terms-row">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">
+                            I agree to the <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a> of Furniture.
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-auth"><i class="bi bi-person-check-fill"></i> Create Account</button>
+                </form>
+
+                <div class="divider"><span>or</span></div>
+
+                <div class="auth-footer">
+                    Already have an account? <a href="login.html"><i class="bi bi-box-arrow-in-right"></i> Login here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
