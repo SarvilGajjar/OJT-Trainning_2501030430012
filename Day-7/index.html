@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CricState</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-slate-950 text-slate-100">
+  <header class="sticky top-0 z-50 bg-slate-950/95 backdrop-blur-xl border-b border-slate-800">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <a href="#home" class="flex items-center gap-2 font-semibold text-xl text-emerald-400">CricState</a>
+      <nav id="navMenu" class="hidden gap-6 text-sm md:flex">
+        <a href="#players" class="hover:text-emerald-300 transition">Players</a>
+        <a href="#live" class="hover:text-emerald-300 transition">Live</a>
+        <a href="#news" class="hover:text-emerald-300 transition">News</a>
+        <a href="#contact" class="hover:text-emerald-300 transition">Contact</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden rounded-lg border border-slate-700 px-3 py-2 text-slate-200">Menu</button>
+    </div>
+    <div id="mobileMenu" class="hidden border-t border-slate-800 bg-slate-950/98 px-5 pb-4 md:hidden">
+      <a href="#players" class="block py-2 text-sm">Players</a>
+      <a href="#live" class="block py-2 text-sm">Live</a>
+      <a href="#news" class="block py-2 text-sm">News</a>
+      <a href="#contact" class="block py-2 text-sm">Contact</a>
+    </div>
+  </header>
+
+  <main class="space-y-20 py-10 px-5 md:px-8">
+    <section id="home" class="mx-auto max-w-6xl rounded-3xl border border-slate-800 bg-slate-900/80 p-8 shadow-xl shadow-slate-900/20 lg:flex lg:items-center lg:justify-between lg:p-12">
+      <div class="max-w-2xl">
+        <span class="inline-flex rounded-full bg-emerald-500/15 px-3 py-1 text-emerald-300 text-sm font-medium">Premium cricket coverage</span>
+        <h1 class="mt-6 text-4xl font-semibold leading-tight tracking-tight text-slate-50 sm:text-5xl">CricState: Your live cricket hub</h1>
+        <p class="mt-5 text-slate-300 sm:text-lg">Follow players, stats, and breaking cricket news with a sleek responsive experience built for fans on every screen.</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#live" class="rounded-full bg-emerald-400 px-6 py-3 text-slate-950 shadow-lg shadow-emerald-500/20 transition hover:-translate-y-1">Live Scoreboard</a>
+          <a href="#contact" class="rounded-full border border-slate-700 px-6 py-3 text-slate-200 transition hover:border-emerald-400 hover:text-emerald-300">Get in Touch</a>
+        </div>
+      </div>
+      <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:mt-0 lg:w-1/2">
+        <article class="rounded-3xl border border-slate-800 bg-slate-950/80 p-6 ring-1 ring-slate-800 transition hover:-translate-y-1">
+          <h2 class="text-sm uppercase tracking-[0.3em] text-slate-400">Next Match</h2>
+          <p class="mt-3 text-xl font-semibold text-slate-50">IND vs AUS</p>
+          <p class="mt-2 text-slate-400">Mumbai | 7:00 PM IST | 24 Jun</p>
+        </article>
+        <article class="rounded-3xl border border-slate-800 bg-slate-950/80 p-6 ring-1 ring-slate-800 transition hover:-translate-y-1">
+          <h2 class="text-sm uppercase tracking-[0.3em] text-slate-400">Top Performer</h2>
+          <p class="mt-3 text-xl font-semibold text-slate-50">Rohit Sharma</p>
+          <p class="mt-2 text-slate-400">280 runs last series</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="players" class="mx-auto max-w-6xl">
+      <div class="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="text-sm uppercase tracking-[0.3em] text-emerald-400">Heroes</p>
+          <h2 class="mt-3 text-3xl font-semibold text-slate-100">Featured Players</h2>
+        </div>
+        <p class="max-w-xl text-slate-400">Discover the batting and bowling stars shaping the next cricket season.</p>
+      </div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <article class="group rounded-[2rem] border border-slate-800 bg-slate-900/95 p-6 transition duration-300 hover:-translate-y-1 hover:border-emerald-400">
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-emerald-300">Batsman</span>
+            <div class="rounded-2xl bg-slate-800 px-3 py-1 text-xs text-slate-300">28 Matches</div>
+          </div>
+          <h3 class="mt-5 text-2xl font-semibold text-slate-50">Virat Kohli</h3>
+          <p class="mt-3 text-slate-400">A master of chase innings with consistent average and strike power.</p>
+          <div class="mt-6 flex items-center gap-4 text-sm text-slate-300">
+            <span class="rounded-full bg-slate-800 px-3 py-2">Avg 58.3</span>
+            <span class="rounded-full bg-slate-800 px-3 py-2">HS 113</span>
+          </div>
+        </article>
+        <article class="group rounded-[2rem] border border-slate-800 bg-slate-900/95 p-6 transition duration-300 hover:-translate-y-1 hover:border-emerald-400">
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-emerald-300">Allrounder</span>
+            <div class="rounded-2xl bg-slate-800 px-3 py-1 text-xs text-slate-300">22 Matches</div>
+          </div>
+          <h3 class="mt-5 text-2xl font-semibold text-slate-50">Hardik Pandya</h3>
+          <p class="mt-3 text-slate-400">Fast strike rate plus seam control make him a match-defining asset.</p>
+          <div class="mt-6 flex items-center gap-4 text-sm text-slate-300">
+            <span class="rounded-full bg-slate-800 px-3 py-2">SR 143</span>
+            <span class="rounded-full bg-slate-800 px-3 py-2">4/27</span>
+          </div>
+        </article>
+        <article class="group rounded-[2rem] border border-slate-800 bg-slate-900/95 p-6 transition duration-300 hover:-translate-y-1 hover:border-emerald-400">
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-emerald-300">Bowler</span>
+            <div class="rounded-2xl bg-slate-800 px-3 py-1 text-xs text-slate-300">24 Matches</div>
+          </div>
+          <h3 class="mt-5 text-2xl font-semibold text-slate-50">Jasprit Bumrah</h3>
+          <p class="mt-3 text-slate-400">Pace, accuracy, and deadly yorkers under pressure.</p>
+          <div class="mt-6 flex items-center gap-4 text-sm text-slate-300">
+            <span class="rounded-full bg-slate-800 px-3 py-2">Econ 4.7</span>
+            <span class="rounded-full bg-slate-800 px-3 py-2">35 Wkts</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="live" class="mx-auto max-w-6xl rounded-[2rem] border border-slate-800 bg-slate-900/90 p-8 shadow-xl shadow-slate-900/20">
+      <div class="mb-8 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p class="text-sm uppercase tracking-[0.3em] text-emerald-400">Live Match</p>
+          <h2 class="mt-3 text-3xl font-semibold text-slate-100">Match Centre</h2>
+        </div>
+        <div class="rounded-3xl bg-slate-950/80 px-4 py-3 text-slate-300">IND 216/5 • 34.2 overs</div>
+      </div>
+      <div class="grid gap-6 lg:grid-cols-3">
+        <div class="space-y-4 rounded-3xl bg-slate-950/80 p-6">
+          <p class="text-slate-400">Current Session</p>
+          <p class="text-2xl font-semibold text-slate-50">Kohli 92*</p>
+          <p class="text-slate-400">Partnership: 78 runs</p>
+        </div>
+        <div class="space-y-4 rounded-3xl bg-slate-950/80 p-6">
+          <p class="text-slate-400">Bowling Figures</p>
+          <ul class="space-y-2 text-slate-300">
+            <li>Jadeja 4-0-21-1</li>
+            <li>Bumrah 6-1-29-2</li>
+            <li>Shami 5-0-34-0</li>
+          </ul>
+        </div>
+        <div class="space-y-4 rounded-3xl bg-slate-950/80 p-6">
+          <p class="text-slate-400">Key Match Stats</p>
+          <div class="grid gap-3 sm:grid-cols-2">
+            <div class="rounded-2xl bg-slate-900/90 p-4 text-center">
+              <p class="text-sm uppercase text-slate-400">Run Rate</p>
+              <p class="mt-2 text-xl font-semibold text-slate-100">6.31</p>
+            </div>
+            <div class="rounded-2xl bg-slate-900/90 p-4 text-center">
+              <p class="text-sm uppercase text-slate-400">Extras</p>
+              <p class="mt-2 text-xl font-semibold text-slate-100">18</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="mx-auto max-w-6xl">
+      <div class="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p class="text-sm uppercase tracking-[0.3em] text-emerald-400">Updates</p>
+          <h2 class="mt-3 text-3xl font-semibold text-slate-100">Latest Cricket News</h2>
+        </div>
+        <a href="#" class="text-sm text-emerald-300 hover:text-emerald-200">View all stories →</a>
+      </div>
+      <div class="grid gap-6 lg:grid-cols-3">
+        <article class="rounded-3xl border border-slate-800 bg-slate-950/90 p-6 transition hover:-translate-y-1">
+          <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Series</p>
+          <h3 class="mt-4 text-xl font-semibold text-slate-100">India secure series lead</h3>
+          <p class="mt-3 text-slate-400">A dominant batting display gives the hosts a strong advantage ahead of the decider.</p>
+        </article>
+        <article class="rounded-3xl border border-slate-800 bg-slate-950/90 p-6 transition hover:-translate-y-1">
+          <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Player</p>
+          <h3 class="mt-4 text-xl font-semibold text-slate-100">Rohit breaks another record</h3>
+          <p class="mt-3 text-slate-400">The captain continues his prolific streak with a swift half-century in the Powerplay.</p>
+        </article>
+        <article class="rounded-3xl border border-slate-800 bg-slate-950/90 p-6 transition hover:-translate-y-1">
+          <p class="text-sm uppercase tracking-[0.3em] text-slate-400">Analysis</p>
+          <h3 class="mt-4 text-xl font-semibold text-slate-100">Bowling plans for the chase</h3>
+          <p class="mt-3 text-slate-400">Experts break down the strategies that will decide the second innings.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="mx-auto max-w-6xl rounded-[2rem] border border-slate-800 bg-slate-900/90 p-8 shadow-xl shadow-slate-900/20">
+      <div class="grid gap-8 lg:grid-cols-2">
+        <div>
+          <p class="text-sm uppercase tracking-[0.3em] text-emerald-400">Connect</p>
+          <h2 class="mt-3 text-3xl font-semibold text-slate-100">Contact the CricState team</h2>
+          <p class="mt-4 text-slate-400">Send a message for news tips, match alerts, or partnership inquiries.</p>
+          <div class="mt-8 space-y-5 text-slate-300">
+            <p><span class="font-semibold text-slate-100">Email:</span> hello@cricstate.com</p>
+            <p><span class="font-semibold text-slate-100">Support:</span> support@cricstate.com</p>
+            <p><span class="font-semibold text-slate-100">Location:</span> Mumbai, India</p>
+          </div>
+        </div>
+        <form id="contactForm" class="space-y-5 rounded-3xl bg-slate-950/80 p-6">
+          <div>
+            <label class="text-sm text-slate-300" for="name">Full Name</label>
+            <input class="mt-2 w-full rounded-3xl border border-slate-800 bg-slate-900 px-4 py-3 text-slate-100 outline-none focus:border-emerald-400" id="name" type="text" placeholder="Your name" required />
+          </div>
+          <div>
+            <label class="text-sm text-slate-300" for="email">Email</label>
+            <input class="mt-2 w-full rounded-3xl border border-slate-800 bg-slate-900 px-4 py-3 text-slate-100 outline-none focus:border-emerald-400" id="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div>
+            <label class="text-sm text-slate-300" for="message">Message</label>
+            <textarea class="mt-2 w-full rounded-3xl border border-slate-800 bg-slate-900 px-4 py-3 text-slate-100 outline-none focus:border-emerald-400" id="message" rows="4" placeholder="How can we help?" required></textarea>
+          </div>
+          <button class="w-full rounded-full bg-emerald-400 px-6 py-3 font-semibold text-slate-950 transition hover:bg-emerald-300" type="submit">Send Message</button>
+          <p id="formNotice" class="text-sm text-emerald-300 hidden">Thanks! Your message has been received.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-950/95 py-6 text-slate-400">
+    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-5 sm:flex-row sm:items-center sm:justify-between">
+      <p>© 2026 CricState. Crafted for cricket fans.</p>
+      <div class="flex flex-wrap gap-4 text-sm text-slate-500">
+        <a href="#home" class="hover:text-emerald-300">Home</a>
+        <a href="#live" class="hover:text-emerald-300">Live</a>
+        <a href="#contact" class="hover:text-emerald-300">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
